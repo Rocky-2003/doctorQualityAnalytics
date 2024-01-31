@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "YourFontName";
+  src: url("/MontserratAlternates-Medium.otf") format("otf");
+  /* Other font-face properties such as font-weight and font-style may be included here */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #f9faf8; */
+  font-family: "Roboto";
+}
+
+li {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* *HEADER SECTION */
+
+#header {
+  padding: 20px 40px;
+  display: grid;
+  z-index: 9;
+  grid-template-columns: 600px 260px;
+  gap: 360px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#menu img {
+  height: 24px;
+  color: #007c66;
+}
+#menu ul {
+  display: flex;
+  font-size: 14px;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.li-el {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-family: "Roboto";
+}
+
+.li-el span {
+  padding-right: 6px;
+}
+.li-el i {
+  font-size: 12px;
+}
+#login {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 30px;
+}
+
+.sign-in a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sign-in {
+  position: relative;
+}
+.sign-in::after {
+  content: "";
+  background-color: #e7e7e7;
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  bottom: -7px;
+  left: 4px;
+  transition: all 0.3s ease;
+}
+
+.sign-in:hover::after {
+  bottom: -4px;
+}
+
+.create-account a {
+  background-color: #017660;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 7px 20px;
+  border: 0;
+}
+
+/* *PAGE 1 */
+#page-1 {
+  z-index: 0;
+  /* margin-top: 80px;
+  margin-bottom: 90px; */
+  background-color: #f9faf8;
+  padding: 80px 40px;
+}
+
+#page-1 h1 {
+  padding-top: 70px;
+  font-family: "YourFontName";
+  font-size: 87px;
+  color: #004037;
+  letter-spacing: -0.217px;
+  line-height: 85.26px;
+  text-align: left;
+  font-family: "Muli";
+  animation-name: popUp;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  transition: animation 1s ease-in;
+  /* transform: translateY(-20px);  */
+}
+
+@keyframes popUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+#page-1 img {
+  width: 1180px;
+  margin: 56px 0;
+}
+
+#families {
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+}
+
+#families img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -55px;
+  left: -10px;
+}
+
+#families div p {
+  margin-bottom: 15px;
+}
+
+#families div p i {
+  padding-left: 5px;
+  font-size: 15px;
+  /* font-weight: 300; */
+}
+
+#families div blockquote {
+  color: #5f5f5f;
+  font-size: 14px;
+}
+
+#details-page-1 {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 6px;
+}
+
+/* *PAGE 2 */
+#page-2 {
+  min-height: 80vh;
+  padding-top: 100px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#page-2 .top-h2{
+color: #004037;
+font-size: 50px;
+}
+#page-2 h2{
+  font-size: 50px;
+}
+
+#page-2 .center-img{
+  padding: 80px 0;
+width: 1200px;
+margin-bottom: 50px;
+}
+
+.grid-section{
+  color:  #004037;
+display: grid;
+grid-template-columns: 500px 500px;
+align-items: center;
+padding: 40px 60px;
+gap: 140px;
+}
+
+.grid-section img{
+  width: 500px;
+}
+
+.grid-section h2{
+  line-height: 1;
+  padding-bottom: 30px;
+}
+
+.grid-section p{
+  line-height: 1.5;
+  color: #636363;
+}
+
+.grid-section button{
+  font-size: 14px;
+  border: 1px solid #383838;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.grid-section button:hover i{
+transform: translateX(2px);
+}
+
+.grid-section button:hover{
+  border-color: #ababab;
+  
+}
+
+.grid-section-2 img{
+  order: 2;
+}
+
+.grid-section-4{
+  background-color: #004037;
+  color: #fff;
+  padding: 80px 60px;
+}
+
+#grid-section-4-p{
+  color: #fff;
+}
+
+#grid-section-4-btn{
+  background-color: #004037;
+  color: #fff;
+  border-color: #fff;
+}
