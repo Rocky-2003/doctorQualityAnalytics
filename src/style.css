@@ -196,9 +196,7 @@ a:link {
   font-size: 50px;
 }
 
-.h2-primary {
-  font-size: 50px;
-}
+
 
 #page-2 .center-img {
   margin-bottom: 50px;
@@ -206,14 +204,14 @@ a:link {
   width: 1200px;
 }
 
-.grid-section {
+/* .grid-section {
   grid-template-columns: 500px 500px;
   align-items: center;
   padding: 40px 60px;
   color: #004037;
   display: grid;
   gap: 140px;
-}
+} */
 
 .grid-section img {
   width: 500px;
@@ -229,22 +227,7 @@ a:link {
   color: #636363;
 }
 
-.primary-btn {
-  border: 1px solid #383838;
-  background-color: #fff;
-  border-radius: 30px;
-  padding: 10px 30px;
-  margin-top: 30px;
-  font-size: 14px;
-}
 
-.primary-btn:hover i {
-  transform: translateX(2px);
-}
-
-.primary-btn:hover {
-  border-color: #ababab;
-}
 
 .grid-section-2 img {
   order: 2;
@@ -419,4 +402,118 @@ a:link {
   background-color: #1b8470;
   color: #fff;
   border: 0;
+}
+
+/* *FOOTER  */
+
+.upper-footer {
+  display: grid;
+  grid-template-columns: 310px 200px 200px 200px 200px;
+  gap: 20px;
+  padding: 40px 40px;
+}
+
+.new-signUp {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  width: 300px;
+}
+
+.new-signUp span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.new-signUp img {
+  width: 115px;
+  padding-bottom: 35px;
+}
+
+.new-signUp input {
+  padding: 10px 15px;
+  width: 280px;
+  border: 0;
+}
+
+.new-signUp input:focus {
+  outline: none;
+}
+
+.new-signUp p {
+  border: 0;
+  border-bottom: 2px solid #d3e5e3;
+  width: 290px;
+}
+
+.new-signUp p i {
+  position: absolute;
+  font-size: 14px;
+  color: #21a28a;
+  right: 15px;
+  bottom: 90px;
+}
+
+.new-signUp div {
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+.new-signUp div a i {
+  color: black;
+}
+.new-signUp div i:first-child {
+  padding-right: 40px;
+}
+
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+.footer-grid strong {
+  font-size: 16px;
+  color: #5a5a5a;
+  margin-bottom: 15px;
+}
+
+.footer-grid a {
+  display: block;
+  color: #9a9a9a;
+}
+
+.footer-grid a:hover {
+  text-decoration: underline;
+}
+
+.lower-footer {
+  display: flex;
+  padding: 150px 40px 120px;
+  gap: 545px;
+}
+.lower-footer p small {
+  /* font-weight: bold; */
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: normal;
+  text-align: start;
+  color: #004037;
+}
+
+.lower-footer div {
+  display: flex;
+  gap: 15px;
+}
+
+.lower-footer div a {
+  text-decoration: underline;
+  color: #004037;
+  font: 11px;
+  letter-spacing: normal;
+  text-align: start;
+  line-height: 16.5px;
 }
